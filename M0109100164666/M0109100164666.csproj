@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{184208D5-0F98-4968-A8DF-B922CFB75FF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>M0109100164666</RootNamespace>
+    <AssemblyName>M0109100164666</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crad.Windows.Forms.Actions">
+      <HintPath>H:\Release\Crad.Windows.Forms.Actions.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\Release\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\Release\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="SIELSEAccesoDatos">
+      <HintPath>H:\Release\SIELSEAccesoDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="SIELSEAncestros, Version=2.23.6.14, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\Release\SIELSEAncestros.dll</HintPath>
+    </Reference>
+    <Reference Include="SIELSEAncestrosOT">
+      <HintPath>H:\Release\SIELSEAncestrosOT.dll</HintPath>
+    </Reference>
+    <Reference Include="SIELSEControles">
+      <HintPath>H:\Release\SIELSEControles.dll</HintPath>
+    </Reference>
+    <Reference Include="SIELSEGMapas, Version=2.23.2.14, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\Release\SIELSEGMapas.dll</HintPath>
+    </Reference>
+    <Reference Include="SIELSEUtil">
+      <HintPath>H:\Release\SIELSEUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dstAtencionesFISE.cs">
+      <DependentUpon>dstAtencionesFISE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dstAtencionesFISE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstAtencionesFISE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="f_AgregarFamiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_AgregarFamiliares.Designer.cs">
+      <DependentUpon>f_AgregarFamiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Mapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Mapa.Designer.cs">
+      <DependentUpon>f_Mapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_ma_AtencionFISE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_ma_AtencionFISE.Designer.cs">
+      <DependentUpon>f_ma_AtencionFISE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_VerificacionFISE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_VerificacionFISE.Designer.cs">
+      <DependentUpon>f_VerificacionFISE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Coordenadas.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CentroAtencionService.cs" />
+    <EmbeddedResource Include="f_AgregarFamiliares.resx">
+      <DependentUpon>f_AgregarFamiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_Mapa.resx">
+      <DependentUpon>f_Mapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_ma_AtencionFISE.resx">
+      <DependentUpon>f_ma_AtencionFISE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_VerificacionFISE.resx">
+      <DependentUpon>f_VerificacionFISE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="dstAtencionesFISE.xsc">
+      <DependentUpon>dstAtencionesFISE.xsd</DependentUpon>
+    </None>
+    <None Include="dstAtencionesFISE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstAtencionesFISE.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dstAtencionesFISE.xss">
+      <DependentUpon>dstAtencionesFISE.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clien list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clien list1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Briefcase.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
